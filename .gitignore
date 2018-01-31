@@ -9,13 +9,6 @@ tmp/**/*
 .sass-cache/
 .yardoc/
 public/assets/
-config/database.yml
-config/mongoid.yml
-config/config.yml
-config/thin.yml
-config/redis.yml
-config/mailer_daemon.yml
-config/secrets.yml
 public/photo/**/*
 public/user/**/*
 public/uploads/**/*
