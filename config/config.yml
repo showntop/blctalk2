@@ -70,7 +70,7 @@ defaults: &defaults
   mailer_options:
     address: ''
     port: 25
-    domain: 'localhost:3006'
+    domain: 'hidden-meadow-49311.herokuapp.com'
     user_name: ''
     password: ''
     authentication: 'plain'
