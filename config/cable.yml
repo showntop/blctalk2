@@ -2,6 +2,7 @@ production: &defaults
   adapter: redis
   url: redis://redis-11438.c15.us-east-1-4.ec2.cloud.redislabs.com:11438
   timeout: 1
+  
 
 development:
   <<: *defaults
