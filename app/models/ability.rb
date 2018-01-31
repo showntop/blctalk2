@@ -10,6 +10,11 @@ class Ability
     elsif @user.roles?(:admin)
       can :manage, :all
       cannot :create, Topic
+      cannot :update, Topic
+      cannot :create, Reply
+      cannot :update, Reply
+      cannot :create, Comment
+      cannot :update, Comment
     elsif @user.roles?(:member)
       roles_for_members
     else
