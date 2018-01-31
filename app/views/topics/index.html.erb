@@ -3,7 +3,7 @@
 <!-- @suggest_topics maybe nil or ActiveRecord::Relation, but we need an array -->
 <% @suggest_topics = @suggest_topics.to_a %>
 
-<%= render "topics/node_info", node: @node %>
+<%= render "topics/node_info", node: @node, nodes: @nodes%>
 
 <div class="row">
   <div class="col-md-9">

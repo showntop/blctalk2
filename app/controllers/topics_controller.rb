@@ -38,8 +38,9 @@ class TopicsController < ApplicationController
 
   def section
     @section = Section.find(params[:id])
-    nodes = Node.where(section_id: params[:id]).select(:id)
-    @topics = Topic.where(node_id: nodes).last_actived.fields_for_list
+    @nodes = Node.where(section_id: params[:id])
+    node_ids = params[:nid].blank? ? @nodes.map { |e| e.id } : params[:nid]
+    @topics = Topic.where(node_id: node_ids).last_actived.fields_for_list
     @topics = @topics.includes(:user).page(params[:page])
     @page_title = "#{@section.name} &raquo; #{t('menu.topics')}"
     @page_title = [@section.name, t("menu.topics")].join(" · ")
