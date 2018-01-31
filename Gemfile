@@ -14,6 +14,7 @@ gem 'jbuilder'
 gem 'turbolinks', '~> 5.0.0'
 gem 'dropzonejs-rails'
 gem 'rails_autolink'
+gem 'bootstrap-sass', '~> 3.3.7'
 
 gem 'sanitize'
 
@@ -120,11 +121,11 @@ gem 'status-page'
 gem 'bundler-audit', require: false
 
 # Homeland Plugins
-gem 'homeland-press'
-gem 'homeland-jobs'
-gem 'homeland-wiki'
-gem 'homeland-note'
-gem 'homeland-site'
+# gem 'homeland-press'
+# gem 'homeland-jobs'
+# gem 'homeland-wiki'
+# gem 'homeland-note'
+# gem 'homeland-site'
 
 gem 'sdoc', '~> 1.0.0.rc3'
 

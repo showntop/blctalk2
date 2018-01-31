@@ -4,7 +4,7 @@
       <% if !node.blank? %>
         <div class="title">
           <%= node.name %>
-          <span class="total">共有 <%= node.topics_count %> 个讨论主题</span>
+          <span class="total">共有 <%= node.topics_count %> 篇文章</span>
           <div class="pull-right">
             <% if node.collapse_summary? %>
             <a class="btn btn-default" data-toggle="collapse" href="#node-summary"><i class="fa fa-lightbulb-o"></i> 节点介绍</a>
@@ -23,7 +23,7 @@
             <a href="<%= main_app.topics_path %>" data-turbolinks-action="replace">默认</a>
           </li>
           <li class="<%= ' active' if action_name == 'popular' %>">
-            <a href="<%= main_app.popular_topics_path %>" data-turbolinks-action="replace"><i class="fa fa-diamond"></i> 优质帖子</a>
+            <a href="<%= main_app.popular_topics_path %>" data-turbolinks-action="replace"><i class="fa fa-diamond"></i> 优质文章</a>
           </li>
           <li class="<%= ' active' if action_name == 'no_reply' %>">
             <%= link_to('无人问津', main_app.no_reply_topics_path, data: { 'turbolinks-action': 'replace' }) %>
