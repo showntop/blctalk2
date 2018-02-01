@@ -5,37 +5,39 @@
 
 .content-block {
   background: #FAFAFA;
-  // border-radius: 5px;
+  border-radius: 5px;
 
   .title{
     font-weight: bold;
     padding: 6px;
-    color: blue;
+    color: #919191;
   }
 }
 
-.home_headline_topics{
-  .recommend_topic{
-    background-color: red;
-    margin-left: 5px;
-    margin-right: 5px;
-    .recommend_topic_info{
-      border-bottom: 1px;
-        border-bottom-style: solid;
-    }
-  }
-}
-
-.home_excellent_topics{
-  .node_block{
-    padding: 15px;
-    .recommend_topic{
-      padding: 5px;
-      .recommend_topic_info{
-
-        background-color: #F2F2F2;
+// .home_headline_topics{
+  .recommend-topic{
+    padding-bottom: 3px;
+    .recommend-topic-item{
+      background-color: #EBEBEB;
+      margin-top: 3px;
+      margin-left: 5px;
+      margin-right: 5px;
+      .recommend-topic-info{
+        height: 62px;
+        border-bottom: 1px;
+        p {
+          margin-top: 22px;
+        }
       }
     }
+  }
+// }
+
+.home_excellent_topics{
+
+  .node-block{
+    margin-bottom: 5px;
+    padding: 10px;
   }
 }
 

@@ -67,9 +67,8 @@ AppView = Backbone.View.extend
     $('.flexslider').flexslider({
       animation: "slide",
       controlNav: false,
-      animationLoop: false,
+      animationLoop: true,
       slideshow: false,
-      itemWidth: 210,
       itemMargin: 5,
       asNavFor: '#slider'
     });
