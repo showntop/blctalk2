@@ -63,7 +63,7 @@ class Topic < ApplicationRecord
 
   class << self
     def headline
-      self.all
+      where(node_id: 1)
     end    
     def recommend
       self.all
