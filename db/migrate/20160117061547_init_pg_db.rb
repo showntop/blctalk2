@@ -213,6 +213,7 @@ class InitPgDb < ActiveRecord::Migration[4.2]
       t.integer  'node_id',                            null: false
       t.string   'title',                              null: false
       t.text     'body',                               null: false
+      t.text     'summary',                            
       t.text     'body_html'
       t.integer  'last_reply_id'
       t.integer  'last_reply_user_id'

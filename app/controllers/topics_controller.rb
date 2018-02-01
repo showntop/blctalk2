@@ -128,6 +128,8 @@ class TopicsController < ApplicationController
     @topic.user_id = current_user.id
     @topic.node_id = params[:node] || topic_params[:node_id]
     @topic.team_id = ability_team_id
+    summary_len = @topic.body.length <= 100 ? @topic.body.length : 100
+    @topic.summary = @topic.body[0...summary_len]
     @topic.save
   end
 
@@ -154,6 +156,8 @@ class TopicsController < ApplicationController
     @topic.team_id = ability_team_id
     @topic.title = topic_params[:title]
     @topic.body = topic_params[:body]
+    summary_len = @topic.body.length <= 100 ? @topic.body.length : 100
+    @topic.summary = @topic.body[0...summary_len]
     @topic.cover = topic_params[:cover]
     @topic.save
   end

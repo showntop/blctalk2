@@ -109,7 +109,7 @@ class Topic < ApplicationRecord
   end
 
   def self.fields_for_list
-    columns = %w(body who_deleted)
+    columns = %w( who_deleted)
     select(column_names - columns.map(&:to_s))
   end
 

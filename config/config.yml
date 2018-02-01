@@ -35,7 +35,7 @@ site_configs: &site_configs
     提示1
     提示2
   newbie_notices: |
-    <p>为提高社区质量，防止新人一来就发帖提问，注册时间超过 1 天才能发帖，请在新人阶段多浏览，看看其他老用户是如何在社区里面分享与解决问题的。</p>
+    <p>为提高平台质量，我们要发布的针对新注册用户的通知。</p>
   ban_reasons: |
     标题或正文描述不清楚
     无意义的发帖
@@ -49,6 +49,7 @@ defaults: &defaults
   # User profile module default: all [company,twitter,website,tagline,location,alipay,paypal,qq,weibo,wechat,douban,dingding,aliwangwang,facebook,instagram,dribbble,battle_tag,psn_id,steam_id]
   profile_fields: 'company,twitter,website,tagline,location,alipay,paypal,qq,weibo,wechat,douban,dingding,aliwangwang,facebook,instagram,dribbble,battle_tag,psn_id,steam_id'
   app_name: "Blctalk"
+  # domain: "localhost:3000"
   domain: "hidden-meadow-49311.herokuapp.com"
   https: false
   default_locale: 'zh-CN'
@@ -71,6 +72,7 @@ defaults: &defaults
     address: ''
     port: 25
     domain: 'hidden-meadow-49311.herokuapp.com'
+    # domain: 'localhost:3000'
     user_name: ''
     password: ''
     authentication: 'plain'

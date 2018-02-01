@@ -4,6 +4,7 @@
  *= require tooltipster.bundle
  *= require notifications
  *= require home
+ *= require topics
  *= require users
  *= require teams
  *= require search
@@ -200,6 +201,7 @@
     vertical-align: top;
     &:last-child { border-bottom: 0px; }
     .avatar { text-align:center; }
+
     .title {
       font-size: 15px;
       margin-bottom: 0;
