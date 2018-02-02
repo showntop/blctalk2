@@ -26,7 +26,7 @@
 
         <div class="topic-reply-count">
           <% if topic.replies_count > 0 %>
-            <%= link_to(topic.replies_count,"#{main_app.topic_path(topic)}#reply-#{topic.last_reply_id}", class: "state-false") %>
+            <%= link_to("#{topic.replies_count}回复","#{main_app.topic_path(topic)}#reply-#{topic.last_reply_id}", class: "state-false") %>
           <% end %>
         </div>
 
@@ -37,7 +37,7 @@
             <span class="hidden-mobile">
             •
             <br>
-            <% if topic.last_reply_user_login.blank? %>
+            <% if true or topic.last_reply_user_login.blank? %>
               <%= raw t("common.created_at", time: timeago(topic.created_at))%>
             <% else %>
               <%= t("common.last_by")%> <%= user_name_tag(topic.last_reply_user_login) %> <%= raw t("common.reply_at", time: timeago(topic.replied_at))%>
