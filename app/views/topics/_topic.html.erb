@@ -1,13 +1,13 @@
 <% cache([topic, topic.user_avatar_raw, suggest]) do %>
   <div class="topic topic-profile row topic-<%= topic.id %>">
 
-    <%= link_to(main_app.topic_path(topic), title: topic.title, class: 'col-md-1') do %>
+    <%= link_to(main_app.topic_path(topic), title: topic.title, class: 'col-xs-1 col-sm-1 col-md-1 col-lg-1') do %>
       <img src="<%= topic.cover %>" style="width: 100px; height: 80px;"/>
     <% end %>
 
-    <div class="infos topic-profile-body col-md-10">
+    <div class="infos topic-profile-body col-xs-10 col-sm-10 col-md-10 col-lg-10">
       <div class="row">
-        <div class="col-md-11">
+        <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
           <div class="title">
             <%= link_to(main_app.topic_path(topic), title: topic.title) do %>
               <%= raw content_tag(:span, topic.node_name, class: 'node') %>
@@ -23,7 +23,7 @@
           <p><%= "#{topic.summary}......" %></p>
         </div>
 
-        <div class="col-md-1">
+        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
           <% if topic.replies_count > 0 %>
             <%= link_to(topic.replies_count,"#{main_app.topic_path(topic)}#reply-#{topic.last_reply_id}", class: "state-false") %>
           <% end %>
@@ -31,7 +31,7 @@
       </div>
     </div>
 
-    <div class="avatar col-md-1">
+    <div class="avatar col-xs-1 col-sm-1 col-md-1 col-lg-1">
       <%= user_avatar_tag(topic.user, :md) %>
       <% if false %>
         <div class="info">
