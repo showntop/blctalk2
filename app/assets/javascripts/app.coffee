@@ -296,7 +296,7 @@ AppView = Backbone.View.extend
       localMode: true
       loading:
         finishedMsg: '<div style="text-align: center; padding: 5px;">已到末尾</div>'
-        msgText: '<div style="text-align: center; padding: 5px;">载入中...</div>'
+        msgText: '<div style="text-align: center; padding: 5px; background: #FAFAFA;">载入中...</div>'
         img: 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=='
 
   initScrollEvent: ->

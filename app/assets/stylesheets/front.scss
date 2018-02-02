@@ -553,6 +553,14 @@
     margin-top: 15px;
   }
 }
+
+@media (max-width: 744px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+
 /* Social Share Button */
 .social-share-button {
   height: 16px;

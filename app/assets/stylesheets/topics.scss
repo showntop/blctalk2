@@ -1,6 +1,44 @@
-	.topic-profile {
-		.topic-profile-body {
-			    padding-left: 60px;
+.topics {
+	background-color: #e5e5e5;
+}
 
+.topic-profile {
+	padding: 5px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	background-color: #FAFAFA;
+
+	.topic-cover {
+		width: 100%; 
+		height: 80px;
+	}
+
+	@media (max-width: 600px) {
+		.topic-cover {
+			min-width: 300px;
+			width: 100%; 
+			height: 280px;
 		}
 	}
+
+	.topic-content {
+		padding: 5px;
+		position: relative;
+
+		.topic-reply-count{
+			position: absolute;
+			top: 0px;
+		}
+
+		.topic-user {
+			padding: 5px;
+			position: absolute;
+			top: 0px;
+			right: 0px;
+		}
+		.info {
+			font-style: oblique;
+			font-size: 6px;
+		}
+	}
+}
