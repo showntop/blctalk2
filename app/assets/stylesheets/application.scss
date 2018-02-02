@@ -8,7 +8,10 @@
  *= require_self
  */
 
-@import "bootstrap.min";
+@import "bootstrap-sprockets";
+@import "variables";
+@import "bootstrap";
+
 @import "vars";
 
 @mixin clearfix() {
@@ -45,7 +48,6 @@ textarea,
 
 /* Bootstrap Theme */
 body {
-  background: #e5e5e5;
   color: $black;
   font-family: Helvetica, Arial, "PingFang SC", "Noto Sans", Roboto, "Microsoft Yahei", sans-serif;
   letter-spacing: .03em;
