@@ -38,9 +38,7 @@ class BaseUploader < CarrierWave::Uploader::Base
     when "upyun"
       [@url, version_name].join("!")    
     when "qiniu"
-      xxx = [@url, qiniu_thumb_key(version_name)].join("?")
-      Rails.logger.info xxx
-      xxx
+      [@url, qiniu_thumb_key(version_name)].join("?")
     else
       [@url, version_name].join("!")
     end

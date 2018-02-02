@@ -36,6 +36,9 @@ class Setting < RailsSettings::Base
     end
 
     def base_url
+      if !Rails.env.production?
+        return [self.protocol, 'localhost:3000'].join("://")
+      end
       [self.protocol, self.domain].join("://")
     end
 
