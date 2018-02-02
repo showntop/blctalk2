@@ -12,6 +12,14 @@
 @import "variables";
 @import "bootstrap";
 
+/* Bootstrap Theme */
+body {
+  font-family: Helvetica, Arial, "PingFang SC", "Noto Sans", Roboto, "Microsoft Yahei", sans-serif;
+  letter-spacing: .03em;
+  padding-top: 65px;
+}
+
+
 @import "vars";
 
 @mixin clearfix() {
@@ -46,13 +54,6 @@ textarea,
 
 .rucaptcha-image { width: 120px; }
 
-/* Bootstrap Theme */
-body {
-  color: $black;
-  font-family: Helvetica, Arial, "PingFang SC", "Noto Sans", Roboto, "Microsoft Yahei", sans-serif;
-  letter-spacing: .03em;
-  padding-top: 65px;
-}
 
 .header {
   .navbar {
