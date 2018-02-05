@@ -8,12 +8,12 @@
         <div id="slider" class="flexslider">
           <ul class="slides">
             <% Topic.headline.each do |t| %>
-              <li >
-                <%= link_to(main_app.topic_path(t), title: t.title) do %>
+              <%= link_to(main_app.topic_path(t), title: t.title) do %>
+                <li >
                   <img src="<%= t.cover %>" width="750" height="340" style=" height: 340px; overflow: hidden;"/>
                   <%= t.title %>
-                <% end %>
-              </li>
+                </li>
+              <% end %>
             <% end %>
           </ul>
         </div>
