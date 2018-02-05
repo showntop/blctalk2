@@ -22,7 +22,7 @@
     logout: "退出"
     remember_me: "记住登录状态（60 天）"
     cancel: "取消"
-    created_at: "于 %{time}"
+    created_at: "%{time}"
     until: "截止"
     last_by: "最后由"
     floor: "楼"

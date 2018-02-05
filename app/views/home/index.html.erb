@@ -10,7 +10,7 @@
             <% Topic.headline.each do |t| %>
               <li >
                 <%= link_to(main_app.topic_path(t), title: t.title) do %>
-                  <img src="<%= t.cover %>" width="750" height="350" style=" height: 350px; overflow: hidden;"/>
+                  <img src="<%= t.cover %>" width="750" height="340" style=" height: 340px; overflow: hidden;"/>
                   <%= t.title %>
                 <% end %>
               </li>
