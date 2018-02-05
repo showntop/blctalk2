@@ -44,7 +44,7 @@
           </li> -->
           <% if !nodes.blank? %>
             <% nodes.each do |no| %>
-              <li class="<%= ' active' if params[:id] == '#{no.id}' %>">
+              <li class="<%= ' active' if params[:nid].to_s == "#{no.id}" %>">
                 <a href="<%= main_app.section_node_topics_path(@section.id,no.id) %>" data-turbolinks-action="replace"><%= no.name %></a>
               </li>
             <% end %>
